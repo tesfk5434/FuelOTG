@@ -4,7 +4,9 @@ import {styles} from '@/styles/auth/index'
 import { LinearGradient } from 'expo-linear-gradient';
 import LoginButton from "@/components/auth/loginButton";
 import SignupButton from "@/components/auth/signupButton";
+import { useRouter } from "expo-router";
 export default function Index(){
+    const router = useRouter();
     return(
         <View style={styles.screenBackground}>
             <LinearGradient
@@ -21,7 +23,7 @@ export default function Index(){
                     <View style={styles.screenContainer}>
                         <Text style={styles.screenTitle}>Welcome</Text>
                         <LoginButton isWhite={false}/>
-                        <SignupButton isWhite={true}/>
+                        <SignupButton onPress={() => router.push('./auth/signup')} isWhite={true}/>
                     </View>
                     <View>
                         <Text style={styles.screenBottom}>Login with Social's</Text>
