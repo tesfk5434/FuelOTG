@@ -21,5 +21,11 @@ export const styles = StyleSheet.create({
         color:'white',
         fontSize:25,
         fontWeight:'bold',
+    },
+    linearBackground:{
+        width:'100%',
+        height:'100%',
+        borderRadius:50,
+        
     }
 })

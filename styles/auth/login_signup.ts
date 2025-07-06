@@ -42,7 +42,7 @@ export const styles = StyleSheet.create(
             marginBottom:30,
         },
         userInputBar:{
-            width:'80%',
+            width:'100%',
             height:50,
             padding:10,
             borderColor:'rgba(0, 0, 0, 0.1))',
@@ -51,6 +51,21 @@ export const styles = StyleSheet.create(
             alignSelf:'center',
             backgroundColor:'rgba(200, 200, 200, 0.23)',
             boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)',
-        }
+        },
+        inputContainer:{
+            flexShrink:1,
+            flexDirection:'column',
+            justifyContent:'flex-start',
+            width:'80%',
+            alignSelf:'center',
+        },
+        inputText:{
+            textAlign:'left',
+            paddingLeft:10,
+            marginBottom:10,
+            color: 'orange',
+            fontWeight:'bold',
+            fontSize:20,
+        },
     }
 ) 

@@ -22,7 +22,7 @@ export default function Index(){
                     </View>
                     <View style={styles.screenContainer}>
                         <Text style={styles.screenTitle}>Welcome</Text>
-                        <LoginButton isWhite={false}/>
+                        <LoginButton isWhite={false} onPress={() => router.push('/auth/login')}/>
                         <SignupButton onPress={() => router.push('./auth/signup')} isWhite={true}/>
                     </View>
                     <View>
